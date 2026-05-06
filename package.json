@@ -1,0 +1,47 @@
+{
+  "name": "@packfiles/warp-mcp",
+  "version": "0.0.1",
+  "description": "MCP server exposing Packfiles Warp migration capabilities to GitHub Copilot Cloud Agent and other MCP clients (failure-recovery v1).",
+  "type": "module",
+  "bin": {
+    "packfiles-warp-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test --import tsx 'tests/**/*.test.ts'"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "@octokit/rest": "^21.0.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "packfiles",
+    "warp",
+    "github-migration",
+    "copilot-cloud-agent"
+  ],
+  "license": "MIT"
+}
