@@ -14,7 +14,7 @@ export function getOctokit(): Octokit {
 
   cached = new Octokit({
     auth: token,
-    userAgent: "packfiles-warp-mcp/0.0.1",
+    userAgent: "packfiles-warp-mcp/0.1.0",
   });
   return cached;
 }

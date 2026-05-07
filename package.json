@@ -1,6 +1,6 @@
 {
   "name": "@packfiles/warp-mcp",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "MCP server exposing Packfiles Warp migration capabilities to GitHub Copilot Cloud Agent and other MCP clients (failure-recovery v1).",
   "type": "module",
   "bin": {
@@ -22,6 +22,7 @@
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.4",
     "@octokit/rest": "^21.0.2",
+    "fflate": "^0.8.2",
     "zod": "^3.23.8"
   },
   "devDependencies": {

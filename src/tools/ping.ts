@@ -20,7 +20,7 @@ export function registerPing(server: McpServer): void {
       content: [
         {
           type: "text",
-          text: `pong! received issue_number=${issue_number}. packfiles-warp-mcp v0.0.1 is alive.`,
+          text: `pong! received issue_number=${issue_number}. packfiles-warp-mcp v0.1.0 is alive.`,
         },
       ],
     }),

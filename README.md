@@ -14,7 +14,7 @@ Sandbox Migration HQ repos register this server in their Copilot Coding Agent se
     "packfiles-warp": {
       "type": "local",
       "command": "npx",
-      "args": ["-y", "github:Packfiles-Sandbox/packfiles-agent-test#main"],
+      "args": ["-y", "github:packfilesagentsandbox/packfiles-agent-test#main"],
       "tools": ["*"]
     }
   }
